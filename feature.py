@@ -29,7 +29,7 @@ class NPDFeature():
         count = 0
         for i in range(self.n_pixels - 1):
             for j in range(i + 1, self.n_pixels, 1):
-                self.features[count] = NPDFeature.__NPD_table__[self.image[i]][self.image[j]]
+                self.features[count] = NPDFeature.__NPD_table__[ self.image[i] ][ self.image[j] ]
                 count += 1
         return self.features
 
